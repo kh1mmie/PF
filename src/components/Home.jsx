@@ -2,14 +2,17 @@ import { useState } from "react";
 
 export default function Home() {
   const [count, setCount] = useState(0);
+  const user = {
+    name: "Khimmie",
+  };
 
   return (
     <div
       className="justify-center items-start flex h-screen 
-    text-nat flex-col gap-4 px-4 w-3/4 mx-auto text-center"
+    text-nat flex-col gap-4 px-4 text-center text-Ivory"
     >
-      <h1> HI , I'm </h1>
-      <span className="text-4xl font-bold text-rudy"> Khimmie </span>
+      <div className=""> HI , I'm </div>
+      <span className="text-4xl font-bold text-rudy"> {user.name} </span>
       <div className=""></div>
     </div>
   );
