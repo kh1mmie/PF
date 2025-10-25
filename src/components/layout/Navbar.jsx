@@ -44,7 +44,7 @@ export default function Navbar() {
       px-10 py-3 flex md:flex-row gap-8 items-center justify-between transition-all duration-300 w-full h-[50px]"
       >
         {/* Logo Web */}
-        <img src="/vite.svg" alt=" " />
+        <img src="/public/img/hmmm.ico" alt=" " />
 
         {/* Main Menu */}
         <ul className="hidden md:flex gap-6 ">
@@ -64,7 +64,7 @@ export default function Navbar() {
           </li>
 
           {/* 2-About */}
-          <li ref={aboutRef} className="relative">
+          <li ref={aboutRef} className="relative justify-items-end">
             <button
               type="button"
               id="about-button"
@@ -92,13 +92,13 @@ export default function Navbar() {
               <div
                 id="about-menu"
                 role="menu"
-                className="absolute  mt-2 w-40
+                className="absolute mt-2 w-35 
               bg-white/20 text-Ivory/40 rounded-md shadow-lg z-10 border-1 border-white/20 "
               >
-                <a href="#" className="block px-4 py-2 hover:text-Green4 ">
+                <a href="#" className="block px-4 py-2 hover:text-Green4 hover:bg-white/5">
                   Profile me
                 </a>
-                <a href="#" className="block px-4 py-2 hover:text-Green4">
+                <a href="#" className="block px-4 py-2 hover:text-Green4 hover:bg-white/5">
                   What I do
                 </a>
               </div>
@@ -124,7 +124,7 @@ export default function Navbar() {
 
       {/* 4-BTN-Contact */}
       <button
-        className="bg-white/20 hover:bg-Green4/66 backdrop-blur-md text-Ivory/40 hover:text-Ivory rounded-full shadow-lg border border-white/20 hover:border-Green4/80
+        className="bg-white/20 hover:bg-Green4/57 backdrop-blur-md text-Ivory/40 hover:text-Ivory rounded-full shadow-lg border border-white/20 hover:border-Green4/80
         px-10 py-3 flex md:flex-row gap-8 items-center justify-between transition-all duration-300 h-[50px] "
       >
         Contact
