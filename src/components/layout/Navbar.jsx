@@ -40,7 +40,7 @@ export default function Navbar() {
     flex justify-between items-center gap-4 text-[18px] font-medium "
     >
       <nav
-        className=" text-Ivory/40 rounded-full   
+        className=" text-white/40 rounded-full   
       px-10 py-3 flex md:flex-row gap-8 items-center justify-between transition-all duration-300 w-full h-[50px]"
       >
         {/* Logo Web */}
@@ -56,7 +56,7 @@ export default function Navbar() {
               className={`${
                 selectedMenu === "home"
                   ? "text-Green4 border-b-2 border-Green4"
-                  : "hover:text-Ivory "
+                  : "hover:text-white "
               }`}
             >
               Home
@@ -75,7 +75,7 @@ export default function Navbar() {
               className={`flex items-center ${
                 selectedMenu === "about"
                   ? "text-[#A3FE01] border-b-2 border-[#A3FE01]"
-                  : "hover:text-Ivory"
+                  : "hover:text-white"
               }`}
             >
               <span className="mr-1.5"> About me </span>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 id="about-menu"
                 role="menu"
                 className="absolute mt-2 w-35 
-              bg-white/20 text-Ivory/40 rounded-md shadow-lg z-10 border-1 border-white/20 "
+              bg-white/20 text-white/40 rounded-md shadow-lg z-10 border-1 border-white/20 "
               >
                 <a href="#" className="block px-4 py-2 hover:text-Green4 hover:bg-white/5">
                   Profile me
@@ -113,7 +113,7 @@ export default function Navbar() {
               className={`${
                 selectedMenu === "work"
                   ? "text-[#A3FE01] border-b-2 border-[#A3FE01]"
-                  : "hover:text-Ivory"
+                  : "hover:text-white"
               }`}
             >
               Work
@@ -124,7 +124,7 @@ export default function Navbar() {
 
       {/* 4-BTN-Contact */}
       <button
-        className="bg-white/20 hover:bg-Green4/57 backdrop-blur-md text-Ivory/40 hover:text-Ivory rounded-full shadow-lg border border-white/20 hover:border-Green4/80
+        className="bg-white/17 hover:bg-Green4/57 backdrop-blur-md text-white/40 hover:text-white rounded-full shadow-lg border border-white/20 hover:border-Green4/80
         px-10 py-3 flex md:flex-row gap-8 items-center justify-between transition-all duration-300 h-[50px] "
       >
         Contact
