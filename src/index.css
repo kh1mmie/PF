@@ -2,6 +2,8 @@
 
 @theme {
   --color-Noir: #1a1a1a; /* used */
+  --color-Dark: #2C2C2C;
+  --color-Eclipse: #2c2c54;
   --color-MidnigthBule: #191970; /* used */
   --color-BlackBurry: #12283f;
   --color-blackHole: #201e4b;
@@ -19,8 +21,8 @@
   --color-Magenta: #ff00ff;
   --color-Green1: #79b85f;
   --color-Green2: #8eff01;
-  --color-Green3: #00ff00; 
-  --color-Green4: #A3FE01;  /* used */
+  --color-Green3: #00ff00;
+  --color-Green4: #a3fe01; /* used */
 }
 
 @layer utilities {
@@ -33,7 +35,8 @@
     -webkit-text-stroke-width: 2px;
     text-stroke-width: 2px;
   }
-    /* color stoke */
+
+  /* color stoke */
   .text-stroke-Green4 {
     -webkit-text-stroke-color: var(--color-Green4);
     text-stroke-color: var(--color-Green4);
@@ -45,5 +48,53 @@
   .text-stroke-Magenta {
     -webkit-text-stroke-color: var(--color-Magenta);
     text-stroke-color: var(--color-Magenta);
+  }
+
+  .animated-rainbow-border {
+    background: linear-gradient(
+      90deg,
+      var(--color-Lavender),
+      var(--color-Magenta),
+      var(--color-bbMilk),
+      var(--color-Green4),
+      var(--color-Teal),
+      var(--color-BlueText),
+      var(--color-Lavender)
+    );
+    background-size: 200% 100%;
+
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+
+    animation: rainbow-border 8s linear infinite;
+  }
+
+  .animated-rainbow-glow {
+    background: linear-gradient(
+      90deg,
+      var(--color-Magenta),
+      var(--color-bbMilk),
+      var(--color-Green4),
+      var(--color-Teal),
+      var(--color-BlueText),
+      var(--color-Lavender) 
+    );
+    background-size: 200% 100%;
+    animation: rainbow-border 8s linear infinite;
+  }
+}
+
+@keyframes rainbow-border {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }

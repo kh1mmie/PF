@@ -37,14 +37,14 @@ export default function Navbar() {
   return (
     <div
       className="fixed top-7 left-1/2 transform -translate-x-1/2 w-3/4
-    flex justify-between items-center gap-4 text-[18px] font-medium "
+    flex justify-between items-center gap-4 text-[18px] font-medium z-100"
     >
       <nav
         className=" text-white/40 rounded-full   
       px-10 py-3 flex md:flex-row gap-8 items-center justify-between transition-all duration-300 w-full h-[50px]"
       >
         {/* Logo Web */}
-        <img src="/public/img/hmmm.ico" alt=" " />
+        <img className="w-[50px] h-[50px]" src="/public/img/hmmm.ico" alt=" " />
 
         {/* Main Menu */}
         <ul className="hidden md:flex gap-6 ">
@@ -93,7 +93,7 @@ export default function Navbar() {
                 id="about-menu"
                 role="menu"
                 className="absolute mt-2 w-35 
-              bg-white/20 text-white/40 rounded-md shadow-lg z-10 border-1 border-white/20 "
+              bg-white/7 text-white/40 rounded-md shadow-lg z-10 border-1 border-white/20 "
               >
                 <a href="#" className="block px-4 py-2 hover:text-Green4 hover:bg-white/5">
                   Profile me

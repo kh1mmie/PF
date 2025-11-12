@@ -5,7 +5,7 @@ import AbstractBackground from "./components/ui/AbstractBackground";
 export default function App() {
   return (
     // <div className="bg-MidnightPurple3 ">
-    <div className="relative isolate min-h-screen bg-Noir overflow-hidden ">
+    <div className="relative isolate min-h-screen bg-Dark overflow-hidden ">
       <AbstractBackground />
       <div className="w-3/4 mx-auto">
         <Navbar />
